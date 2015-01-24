@@ -1,0 +1,281 @@
+/*componentes*/
+
+/*utilidades*/
+
+
+.u-title{
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: .5em;  
+
+
+}
+
+
+/* Menu */
+.MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em; /* se puede usar px, em (vale lo que valga la fuente asignada mas cercana) o %porcentajes*/
+	/*60px entre em 60/16= 3.75*/
+	position: fixed;
+	left: 0; /* para poner todo el ancho*/
+	right: 0; /* para poner todo el ancho*/
+	top: 0;
+}
+
+.MainMenu-list{
+	margin: 0; /*10px, 20 px, 30px, 40px, arriba, derecha, abajo, izquierda*/
+	padding: 0;
+}
+
+.MainMenu-item{
+	display: inline-block; /*acomodar el menu alineados*/
+
+}
+
+.MainMenu-link{
+
+	color: #00DBFF;
+	text-decoration: none;/*quitar  subrayado*/
+	line-height: 3.75em; /*centrarse verticalmente con una sola linea*/
+	margin-right: 1.5em;
+}
+
+
+
+/* Header */
+.Header{
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*esta propiedad hace que se use toda la imagen por completo*/
+	height: 350px;
+	text-align: center;
+	padding:1.2em 0;
+}
+
+.Header-imageContainer{
+	margin: 0;
+}
+
+.Header-image{
+	border: 5px solid white;
+	border-radius: 50%;
+
+
+}
+
+.Header-name,
+.Header-link{
+
+	color: white;
+}
+
+.Header-link{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.Header-name{
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+}
+
+
+
+/* Profile */
+
+.Profile{
+	text-align: center;
+}
+
+.Profile-link{
+	background: orange;
+	border-radius: 2em;
+	color: white;
+	margin-right: .5em;
+	padding: .5em 1em; /*arriba y abajo primer valor costados segundo valor*/
+	text-decoration: none;
+}
+
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.Work-item{
+	display: inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+
+}
+
+.Work-imageContainer{
+	margin: 0;
+}
+
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+
+.Footer{
+	background-image: url('../images/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.Footer-form{
+	display: inline-block;
+}
+
+
+.Footer-left{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top;
+}
+
+
+.Footer-formInput,
+.Footer-textArea{
+		background: white;
+		border: none;
+		display: block;
+		border-radius: 2em;
+		padding: .5em;
+		margin: 0 auto 1em;
+}
+
+.Footer-textArea{
+	resize:none;
+}
+
+
+.Footer-button{
+	background: orange;
+	color: white;
+	border-radius: 1em;
+	padding: .5em  1em;
+
+}
+
+.Footer-title{
+	color: white;
+
+}
+
+
+/*
+.u-title{
+
+
+}
+
+
+.Header{
+
+	/*position: static;/*todos los elementos por defecto tiene static, tambien de esta forma se resetea*/
+/*	position: relative;
+	/*top: 20px;
+	left: 20px;*/
+	
+	/*margin-top: 20px;/*el margen respeta los demas elementos al contrario de positon*/
+	/*margin-left: 20px;*/
+	
+/*	background: gray;
+	
+	display: inline-block;
+	/*display:  block;*/
+	/*display: inline-block;/*si se necesita que un elemento se apile a un lado de otro se usa inline-block*/
+	/*display: none;*/
+	/*se utiliza solamente pra textos display inline <strong><em> si se quiere para estilo se usa span*/
+/*}
+
+.Header-imageContainer{
+
+}
+
+
+
+.Header-name{
+
+}
+
+.MainMenu{
+	top: 0px;
+	right: 0px;
+	position: fixed; /*SIEMPRE VISIBLES EN LA NAVEGACION*/
+	/*z index de 1 n numeros dependiendo la apilacion de los demas z index existentes*/
+/*	z-index: 1;
+}
+
+.Profile{
+	background: lightgray;
+	/*display: inline-block; /*si se necesita que un elemento se apile a un lado de otro se usa inline-block,*/
+/*	position: relative;
+	
+
+}
+
+.Profile-span{
+	background: red;
+	color: white;
+	font-weight: bold; 
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+
+
+.Work{
+
+}
+
+.Footer{
+
+}
+
+/*semantica ? */
+
+/*lo recomendado es siempre utilizar los selectores de clases*/
+
+
+
+/*selector de etiqueta */
+/*selector descendente, un elemneto dentrod e otro nav dentro de header*/
+/*selector de ID los selectores de id nose repiten*/
+/*selector basico .header (class="header")
+/*ul>li, hijos directos, si hay li dentro de los primeros li los ignora
+/*selector adyacente section + section toma la primera condicion y toma al de alado
+/*selctor de atributos se define pro corchetes [href="#yo"] tosos los href reciben esos estilos y se puede ser mas especifico añadiendo condicion dentro del href
+/*selectores de Csss*/
+
+
+/*
+
+Modular el codigo
+.MyComponent {}
+.MyComponent.is-animating {}
+.MyComponent--modifier {}
+
+.MyComponent-part {}
+.MyComponent-anotherPart {}*/
+
+/* display block ocupa tod el ancho
+/*display inline block ocupa el tamaño de su contenido
+/*4 positions 
+
+las fuentes de google fonts deben primero que normalize para que pueda validarla
