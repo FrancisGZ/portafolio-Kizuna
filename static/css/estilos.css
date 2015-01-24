@@ -1,3 +1,14 @@
+/*utilidades*/
+.u-title{
+	color: #00DBFF;
+	border-bottom: 2px dashed #00DBFF;
+	font-weight: normal; /*es lo mismo que 400*/
+	padding-bottom: .5em;
+	text-align: center;
+
+}
+/*Menu*/
+
 .MainMenu{
 	background: #1E1E1E;
 	text-align: center;
@@ -5,7 +16,7 @@
 	position: fixed; /*para que el menu se que de  fijo*/
 	left: 0; /*para poner todo el ancho al menu*/
 	right: 0;
-	top: 0;
+	top: 0;/*posisionar el menu hasta arriba*/
 }
 
 .MainMenu-list{
@@ -22,6 +33,69 @@
 	text-decoration: none;
 	line-height: 3.75em; /*tiene recibir el mismo valor que el alto del padre y caundo es solo una linea*/
 	margin-right: 1.5em;
+
+}
+
+/*Header*/
+
+.Header{
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center; /*se centra con respecto al alto y ancho*/
+	background-size: cover ;
+	text-align: center;
+	padding:1.2em 0 ;/*margen interiror*/
 }
 
 
+.Header-imageContainer{
+	margin: 0;
+}
+
+.Header-image{
+	border:5px solid black ;/*tamaño-tipo-color*/
+	border-radius: 50% ;/*los valores del border que recibe son los mismo que loas magenes*/
+}
+
+
+.Header-name,
+.Header-link{
+	color: white;
+}
+
+
+.Header-link{
+	font-size: 2.2em;
+	font-weight: bold; /*letra negrita o 700*/
+	text-decoration: none;
+}
+
+
+.Header-name{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0;/*quitar margen*/
+}
+
+
+/*Profile*/
+
+.Profile{
+	text-align: center;
+}
+
+
+.Profile-link{
+	background: orange;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+
+
+.Work{
+	margin-top: 2em;
+}
